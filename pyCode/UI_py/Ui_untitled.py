@@ -15,6 +15,7 @@ class Ui_MainWindow(QMainWindow):
     currNum = '' #当前值
     preNum = '' #上一个结果
     result = 0 #存放结果
+    
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 600)
