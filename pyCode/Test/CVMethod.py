@@ -21,3 +21,10 @@ class CVMethod(object):
                 jNew = int(j*(info[1]*1.0/width))
                 dstImg[i,j] = mat[iNew,jNew]
         return dstImg
+    """
+    opencv中仿射变换矩阵的使用方法
+    """
+    @staticmethod
+    def GetAffineTrans(sourcePoint,targetPoint):
+        return cv2.getAffineTransform(sourcePoint,targetPoint)
+        #使用时， cv2.warpAffine(img,matAffine,(width,height))
